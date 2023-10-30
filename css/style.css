@@ -1,0 +1,1007 @@
+
+*{ box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header {
+    
+    height: 100px;
+    background-color:#272635 ;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;     
+}
+
+.logo{
+  width: 190px;
+  height: 80px;  
+}
+
+.nombre{
+    color: #ffffff;
+    display: flex;
+    font-family: 'Raleway', sans-serif ; 
+    font-size: 40px;  
+    padding: 0px 0px 0px 0px 
+       
+    }
+
+.nombre h1 { 
+    padding: 0px 0px 0px 00px ;
+    justify-content: center;
+    text-shadow: 2px 2px #B1E5F2 ; }    
+
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;    
+}
+
+.mh{
+    width: 45px;
+    height: 45px;
+    text-decoration: none;
+    list-style: none;
+}
+.menu .navbar ul li{
+    position: relative;
+}
+
+/*nav*/
+
+.navbar ul{   
+    width: 300px;
+    height: 90px;   
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    float: right;
+    padding: 0px 20px 0px 0px;
+ }
+
+ .navbar ul li a {
+    max-width: 1200px;
+    padding-left: 20px;
+    font-family: 'Raleway', sans-serif ;
+    text-shadow: 2px 2px #272635; 
+    font-size: 20px;  
+    color: rgb(243, 241, 241);
+    text-transform: uppercase; 
+ }
+
+ .navbar ul li a:hover{
+     color:#B1E5F2 ;      
+ }
+
+.navbar ul li:hover{    
+    transform: scale(1.1) ;
+    -webkit-transform: scale(1.1) ;
+    -moz-transform: scale(1.1) ;
+    -ms-transform: scale(1.1) ;
+    -o-transform: scale(1.1) ;
+    text-align: center;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #dedede;
+    display: block;
+    font-weight: bold;   
+}
+
+#menu{   
+    display: none;
+}
+
+.mh{
+    cursor: pointer;
+    display: none;    
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*estilos para slider*/
+
+
+.slider{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    
+    transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    -webkit-animation: slider 28s infinite linear;
+    background-image: url(../img/5.jpg);
+    animation: slider 28s infinite linear;
+    background-repeat:no-repeat;
+    background-position-x:center;
+    background-position-y:center;
+    background-size: 100%;
+}
+
+.slider-contenido {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 600px;
+    color: #fff;
+    background-color: rgba(0, 22, 40, .6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+.slider-contenido h1{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif ; 
+    text-transform: uppercase;
+    text-shadow: 2px 2px #272635; 
+   
+   
+}
+
+.slider-contenido a{
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif ;
+    color: #fff;
+    padding: 15px 20px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 20px;
+    
+    
+}
+
+.slider-contenido a:hover{
+    background-color:#B1E5F2;
+    color: #333;
+    transform: scale(1.1) ;
+  -webkit-transform: scale(1.1) ;  
+    -moz-transform: scale(1.1) ;
+    -ms-transform: scale(1.1) ;
+    -o-transform: scale(1.1) ;
+    text-align: center;
+    -webkit-transform: scale(1.1) ;
+}
+
+
+@keyframes slider {
+    
+    0%{
+        background-image: url(../img/3.jpg);
+        }
+    25%{
+        background-image: url(../img/3.jpg);
+        }
+    26%{
+        background-image: url(../img/men-slider4.png);
+        }
+    50%{
+        background-image: url(../img/men-slider4.png);
+        }
+    51%{
+        background-image: url(../img/music-studi.png);
+        }
+    75%{
+        background-image: url(../img/music-studi.png);
+        }
+    76%{
+        background-image: url(../img/estudioslider4.png);
+        }
+    100%{
+        background-image: url(../img/estudioslider4.png);
+        }
+}
+
+main{
+    background-image: url(../img/6.jpg);
+    background-repeat:no-repeat;
+    background-position-x:center;
+    background-position-y:center;
+    background-size: 100%;
+  
+}
+.btn_formulario{
+    display:none;
+
+}
+
+.main_nivel_3{
+    background-image: url(../img/15.jpg);
+
+}
+
+.container{
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    
+    
+}
+
+.titulo{
+    width: auto;
+    text-align: center;
+    font-weight: bold;
+    margin: 40px;
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif ; 
+    text-transform: uppercase; 
+    text-shadow: 2px 2px #272635; 
+
+   
+}
+
+.caja_nivel_3 img{
+    width: 420px;
+    height: 400px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-style:ridge;
+    border-color: #272635 
+   
+}
+
+.caja_nivel_3 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    font-family: 'Raleway', sans-serif ; 
+    font-size:xx-large;
+   
+    
+    }
+ .caja_nivel_3 a:hover{
+    background-color:#B1E5F2;
+    color: #333;
+    transform: scale(1.1) ;
+    /*modificadoDavid*/-webkit-transform: scale(1.2) ;
+    -moz-transform: scale(1.1) ;
+    -ms-transform: scale(1.1) ;
+    -o-transform: scale(1.1) ;
+    text-align: center;
+    -webkit-transform: scale(1.1) ;
+    color: #333;
+}
+
+.caja_nivel_3{
+    margin: 10px 50px 50px 50px 
+ }
+
+ .caja_nivel_3 p{
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Raleway', sans-serif ; 
+    text-transform: uppercase; 
+    margin: 10px 0px 35px 0px; 
+    text-shadow: 1px 1px #272635; 
+ }
+
+ .descripcion_tipo_nivel_3 {
+    font-family: 'Raleway', sans-serif ; 
+    font-size: 26px;
+    color: #E8E9F3;
+    text-transform: uppercase;
+    line-height: 1.60;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+ .caja img{
+    width: 220px;
+    height: 200px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-style:ridge;
+    border-color: #272635 
+   
+}
+ .caja a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    padding:5px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    font-family: 'Raleway', sans-serif ; 
+    font-size: 20px;
+   
+    
+    }
+ .caja a:hover{
+    background-color:#B1E5F2;
+    color: #333;
+    transform: scale(1.1) ;
+    /*modificadoDavid*/-webkit-transform: scale(1.2) ;
+    -moz-transform: scale(1.1) ;
+    -ms-transform: scale(1.1) ;
+    -o-transform: scale(1.1) ;
+    text-align: center;
+    -webkit-transform: scale(1.1) ;
+    color: #333;
+}
+
+.caja{
+    margin: 10px 50px 50px 50px 
+ }
+
+ .caja p{
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif ; 
+    text-transform: uppercase; 
+    margin: 10px 0px 35px 0px; 
+    text-shadow: 1px 1px #272635; 
+ }
+ 
+/* --------------------------------------------- ESTILOS BASE --------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: #222;
+    color: #fff;
+}
+
+/* -------------------------------------------- MAIN ------------------------------------------*/
+ .mform {
+    width: 90%;
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 2px solid #035f22;
+    box-shadow: 0 2px 10px #035f22, 0 2px 10px #035f22;
+    font-family: 'Raleway', sans-serif ; 
+    text-transform: uppercase;
+}
+
+/* -------------------------------------------- FORMULARIO ------------------------------------------*/
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+
+}
+
+.formulario__label {
+    display: block;
+    padding: 10px 0;
+}
+
+.formulario__grupo-input {
+    position: relative;
+}
+
+.formulario__input {
+    width: 90%;
+    background: transparent;
+    border: 2px solid #78af7a;
+    border-radius: 20px;
+    border-right: none;
+    border-top: none;
+    color: #fff;
+    font-size: 17px;
+    outline: none;
+    line-height: 45px;
+    padding: 0 10px;
+    transition: all 1s;
+   
+}
+
+.formulario__validacion-estado {
+    position: absolute;
+    right: 45px;
+    bottom: 15px;
+    z-index: 1000;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.formulario__input:focus {
+    box-shadow: 0 0 5px #035f22;
+}
+
+.formulario__input-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formulario__input-error-activo {
+    display: block;
+}
+
+.formulario__span {
+    font-size: 1.1em;
+    font-weight: 100;
+}
+
+.formulario__checkbox{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 10px;
+}
+
+.formulario__grupo-terminos {
+    text-align: center;
+}
+
+.formulario__grupo-terminos, .formulario__mensaje, .formulario__grupo-btn-enviar {
+    grid-column: span 2;
+}
+
+.formulario__mensaje {
+    display: none;
+    /*height: 45px;
+    *//*line-height: 45px;
+    */padding: 15px;
+    border-radius: 20px;
+    background: rgb(220, 50, 50);
+    text-align: center;
+   
+}
+
+.formulario__mensaje-activo {
+    display: block;
+}
+
+.formulario__grupo-btn-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.formulario__btn {
+    padding: 15px 35px;
+    background: #202174;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif ; 
+    text-transform: uppercase;
+    
+}
+
+.formulario__btn:hover {
+    background: #035f22;
+    transition: 1s;
+}
+
+.formulario__mensaje-exito {
+    font-size: 2em;
+    color: #20b80c;
+    padding: 10px;
+    text-align: center;
+    display: none;
+    font-family: 'Raleway', sans-serif ; 
+    text-transform: uppercase;
+}
+
+.formulario__mensaje-exito-activo { 
+    display: block;
+}
+
+
+/* --------------------------------------------- VALIDACIÓN ----------------------------------------- */
+.formulario__grupo-correcto .formulario__validacion-estado{
+    color: #29ee0f;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label{
+    color: #ee0f0f;
+}
+
+
+.formulario__grupo-incorrecto .formulario__validacion-estado{
+    color: #ee0f0f;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input{
+    border: 1px solid #ee0f0f;
+    
+}
+
+
+/* -------------------------------------------- RESPONSIVE  --------------------------------------*/
+
+@media screen and (max-width:720px) {
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario__grupo-terminos, 
+    .formulario__mensaje, 
+    .formulario__grupo-btn-enviar {
+        grid-column: 1;
+    }
+
+    .formulario__btn {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #272635 ;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+   
+    
+}
+
+/* Estilos para las secciones del footer */
+
+.ubicacion iframe{
+    width: 150px;
+    height: 100px;
+}
+.ubicacion h3{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.acerca-de h3{
+    display: flex;
+    justify-content: center;
+    
+}
+.contacto h3{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+.contacto li img{
+    width: 30px;
+    height: 30px;
+    vertical-align:middle;
+    margin: 7px 10px;
+}
+
+.contacto p img{ 
+vertical-align:middle;
+margin: 0px 10px; 
+
+}
+
+.contacto p {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #E8E9F3;
+
+}
+
+.acerca-de p{
+    padding-top: 15px;
+   
+}
+
+.contacto ul li a{
+    color: #fdfcfc;
+}
+
+.contacto {
+    margin-bottom: 15px;
+    color: #E8E9F3;
+    text-shadow: 2px 2px #272635;
+}
+.contacto img:hover{
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+
+
+.redes-sociales h3{
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales ul li a{
+    color: #fdfcfc;
+    text-decoration: none; 
+    /* float: left; */
+    margin: 0 10px;  
+}
+
+.redes-sociales ul li a img{
+    width: 40px;
+    height: 40px;
+   
+}
+.redes{
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    padding: 25px;
+}
+.redes li a img:hover{
+    transform: scale(1.5);
+}
+
+/*Hasta aca estilos de footer*/
+ 
+/*h1{
+    margin: 80px 0 0 350px;
+}*/
+
+/*estilos responsive tablet*/
+@media(max-width: 900px){
+
+    .slider-contenido a{
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif ;
+        color: #fff;
+        padding: 15px 20px;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        text-transform: uppercase;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        font-size: 20px;
+        
+        
+    }
+    
+    .slider-contenido a:hover{
+        background-color:#B1E5F2;
+        color: #333;
+        transform: scale(1.1) ;
+      -webkit-transform: scale(1.1) ;  
+        -moz-transform: scale(1.1) ;
+        -ms-transform: scale(1.1) ;
+        -o-transform: scale(1.1) ;
+        text-align: center;
+        -webkit-transform: scale(1.1) ;
+    }
+
+
+        .main_nivel_3{
+           background-image: none;
+       
+    }
+    .main_nivel_3 img{
+        width: 250px;;
+        height: 250px;
+    }
+
+    .descripcion_tipo_nivel_3 p{
+        display: none;
+        text-align: center;
+        font-size: 12px;
+        font-family: 'Raleway', sans-serif ; 
+        text-transform: uppercase; 
+        margin: 5px;
+        text-shadow: 1px 1px #272635; 
+     }
+.caja_nivel_3 a{
+    font-size: 24px;
+}
+
+.acerca-de p{
+    font-size: 12px;
+    padding: 10px;
+}
+
+
+    .header {
+        height: 70px;
+       }
+    .logo{
+           width: auto;
+           height: 45px;
+        }
+    .nombre{
+            display:none;
+            height: 20px;
+            align-items: center;
+            font-size: 15px;
+            }
+    .menu .navbar ul li{
+            position: relative;
+            float: left;
+        }
+        
+        /*nav*/
+    .navbar ul{
+            width: 300px;
+            height: 90px;
+            }
+    .navbar ul li a {
+            padding-left: 10px;
+            font-size: 15px;
+        }
+    
+    .titulo{
+         width: 100%;
+         text-align: center;
+         font-weight: bold;
+         margin: 30px;
+         font-size: 35px;
+        }
+    .container{
+            width:100%; 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+    
+    .caja img{
+            width: 180px;
+            height: 150px;
+            border-radius: 15px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -ms-border-radius: 15px;
+            -o-border-radius: 15px;
+        }
+        
+    .caja{
+            margin: 70px;
+         }
+        
+    .caja p{
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+         }
+
+
+         
+
+         
+    
+        }
+
+
+
+
+
+
+
+
+/*responsive celular*/
+@media(max-width: 700px){
+
+    .btn_formulario a{
+        
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif ;
+        color: #fff;
+        padding: 15px 20px;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        text-transform: uppercase;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        font-size: 20px;
+        
+        
+    }
+    
+    .btn_formulario a:hover{
+        background-color:#B1E5F2;
+        color: #333;
+        transform: scale(1.1) ;
+      -webkit-transform: scale(1.1) ;  
+        -moz-transform: scale(1.1) ;
+        -ms-transform: scale(1.1) ;
+        -o-transform: scale(1.1) ;
+        text-align: center;
+        -webkit-transform: scale(1.1) ;
+    }
+
+   
+  
+   
+    .nombre h1{
+        /*height: auto;
+        width: auto;*/
+        font-size: 20px;
+        display: none;
+        justify-content: center;
+        text-align: center;
+       
+    }
+
+    .logo{
+       width: auto;
+        height: 60px;
+       
+       
+       
+        /* display: none; */
+    }
+
+    .navbar{
+        display: none;
+       
+       }
+
+    .mh{ 
+        display: initial;
+        position: fixed;
+        top: 20px;
+        width:30px;
+        height:30px;
+       }
+       
+        .navbar ul{
+            
+        flex-direction: column;
+       
+      
+        position: fixed;
+        text-align: center;
+        top: 74px;
+       /* left: -100%;*/
+        background: #272635 ;
+        width: 50%;
+        height: 250px;
+        right: 0;
+             
+
+       }
+
+       .nav_input{
+        flex-direction: column;
+       }
+       
+      
+       
+       .navbar ul li a{
+       
+        padding: 0;
+        margin: 0;
+        
+       }
+       
+       #menu:checked ~ .navbar {
+        display: initial;
+        
+    }
+    
+
+       .slider{
+        display: none;
+       }
+
+       .titulo{
+        display: none;
+     }
+   
+    
+
+    main {
+        background-image: none;
+        background-color:#7E8282
+       
+    }
+    .main_nivel_3{
+           background-image: none;
+       
+    }
+    .main_nivel_3 img{
+        width: 250px;;
+        height: 250px;
+    }
+
+    .descripcion_tipo_nivel_3 p{
+        display: none;
+        text-align: center;
+        font-size: 12px;
+        font-family: 'Raleway', sans-serif ; 
+        text-transform: uppercase; 
+        margin: 5px;
+        text-shadow: 1px 1px #272635; 
+     }
+.caja_nivel_3 a{
+    font-size: 24px;
+}
+
+.acerca-de p{
+    font-size: 12px;
+    padding: 10px;
+}
+
+
+}
+

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+   <link rel="shortcut icon" href="iconos/saxophone.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Pacifico&family=Vidaloka&display=swap" rel="stylesheet">
+    <title>Registro</title>
+</head>
+<body>
+    <header class="header">
+        <div>
+             <img class="logo" src="/iconos/Logo QMI.svg" alt="logo de la empresa">
+        </div>
+        <div class="nombre">
+            <h1>QUIERO MI MÚSICA</h1>
+        </div>
+        <div class="contmenu">
+            <label for="menu" class="nav_label">
+                 <img class="mh" src="/iconos/menuBlanco.png" alt="">
+            </label>
+            <input type="checkbox" id="menu" class="nav_input"/>
+            
+        <nav class="navbar">
+            <ul>
+               <!--<li>Inicio</li>-->
+               <li><a href="/index.html">Inicio</a></li>
+               <li><a href="/paginas/viento.html">Viento</a></li>
+               <li><a href="/paginas/cuerda.html">Cuerda</a></li>
+               <li><a href="/paginas/percusion.html">Percusion</a></li>
+               <li><a href="/paginas/accesorios.html">Accesorios</a></li>
+            </ul>
+        </nav>
+         </div>
+        </div>
+    </header>
+    <hr>
+    <!-- MAIN -->
+<main class="mform">
+    
+    <!-- FORMULARIO -->
+    <form action="#" class="formulario" id="formulario">
+        <!-- GRUPO DE USUARIO -->
+        <div class="formulario__grupo" id="grupo__usuario">
+            <label class="formulario__label">Nombre de usuario</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="usuario">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El usuario debe tener minimo 4 caracteres y solo se admiten números, letras y guión bajo.</p>
+        </div>
+
+        
+        <!-- GRUPO DE NOMBRE-->
+        <div class="formulario__grupo" id="grupo__nombre">
+            <label class="formulario__label">Nombre y Apellido</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El nombre debe tener minimo 4 caracteres y solo se admiten números, letras y guión bajo.</p>
+        </div>
+
+
+        <!-- GRUPO DE CONTRASEÑA 1-->
+        <div class="formulario__grupo" id="grupo__password">
+            <label class="formulario__label">Contraseña</label>
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password" id="password">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">La contraseña debe ser de 4 a 12 digitos</p>
+        </div>
+
+
+        <!-- GRUPO DE CONTRASEÑA 2-->
+        <div class="formulario__grupo" id="grupo__password2">
+            <label class="formulario__label">Repetir la contraseña</label>
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password2" id="password2">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">La contraseña no coincide</p>
+        </div>
+
+
+        <!-- GRUPO DE EMAIL -->
+        <div class="formulario__grupo" id="grupo__correo">
+            <label class="formulario__label">Correo Electonico</label>
+            <div class="formulario__grupo-input">
+                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="ejemplo@correo.com">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El correo debe tener mÍnimo 4 caracteres y sólo se admiten números, letras y guión bajo.</p>
+        </div>
+
+
+        <!-- GRUPO DE TELÉFONO -->
+        <div class="formulario__grupo" id="grupo__telefono">
+            <label class="formulario__label">Teléfono</label>
+            <div class="formulario__grupo-input">
+                <input type="telefono" class="formulario__input" name="telefono" id="telefono" placeholder="0123456789">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El número debe tener 10 digitos</p>
+        </div>
+
+
+        <!-- GRUPO TERMINOS Y CONDICIONES -->
+        <div class="formulario__grupo formulario__grupo-terminos" id="grupo__terminos">
+            <label class="formulario__label">
+                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                <b class="formulario__span">Acepto los terminos y condiciones</b>
+            </label>
+        </div>
+        
+        <!-- MENSAJE DE CAMPOS REQUERIDOS -->
+        <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><i class="fas fa-exclamation-circle"> <b>Error:</b> Debes completar todos los campos</i></p>
+        </div>
+
+
+        <!-- GRUPO ENVIAR -->
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario se envió correctamente</p>
+            <input class="formulario__btn" type="submit" value="Enviar">
+        </div>
+    </form>
+</main>
+
+   
+
+
+
+    <!--<footer class="footer"> este es el pie de pagina-->
+        <footer>
+            <div class="ubicacion">
+                <h3>Ubicación</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52490.927111623656!2d-58.60509550062841!3d-34.68795066829098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc6286935be01%3A0xa072acc56816b433!2sPlaza%20San%20Justo!5e0!3m2!1ses!2sar!4v1693857416312!5m2!1ses!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="acerca-de">
+                <h3>Acerca de Nosotros</h3>
+                <p>Somos una empresa comprometida con nuestros clientes. <br>Contamos con una amplia variedad de marcas. <br>
+                   Atención personalizada para que vivas una experiencia única. <br>Garantía y servicio post-venta.
+                </p>
+                
+            </div>
+            <div class="contacto">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><img src="/iconos/email.png" alt=""> ejemplo@email.com</li>
+                    <li><img src="/iconos/llamada.png" alt=""> +123 456 789</li>
+                    <li><a href="https://wa.me/123456789" target="_blank"><img class="waap" src="/iconos/whatsapp (1).png" alt=""> +123 456 789</a></li>
+                </ul>
+            </div>
+            <div class="redes-sociales">
+                <h3>Nuestras Redes</h3>
+                <ul class="redes">
+                    <li><a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="/iconos/facebook (1).png" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com/?lang=es" target="_blank"><img src="/iconos/gorjeo.png" alt="Twitter"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="/iconos/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.linkedin.com/login/es" target="_blank"><img src="/iconos/linkedin.png" alt="LinkedIn"></a></li>
+                </ul>
+            </div>
+        </footer>
+    
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/c5b95681ac.js" crossorigin="anonymus"></script>
+        <script src="/js/formulario.js"></script>
+        <script src="https://kit.fontawesome.com/73f851add2.js" crossorigin="anonymous"></script>
+</body>
+</html>
